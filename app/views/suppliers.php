@@ -99,8 +99,8 @@
 <!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-  const ctx = document.getElementById('supplierChart').getContext('2d');
-  new Chart(ctx, {
+  const ctp = document.getElementById('supplierChart').getContext('2d');
+  new Chart(ctp, {
     type: 'line',
     data: {
       labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],

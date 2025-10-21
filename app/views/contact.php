@@ -96,7 +96,7 @@
                 min-height: 130px;
             }
 
-            button {
+            #btn-fill {
                 background: #0b2b43;
                 color: white;
                 border: none;
@@ -112,7 +112,7 @@
                 gap: 0.5rem;
             }
 
-            button:hover {
+            #btn-fill:hover {
                 background: #163c5c;
             }
 
@@ -186,7 +186,7 @@
                         ></textarea>
                     </div>
 
-                    <button type="submit">
+                    <button type="submit" id="btn-fill">
                         <i class="fa-solid fa-paper-plane"></i> Send Message
                     </button>
                 </form>

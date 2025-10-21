@@ -37,7 +37,7 @@
                     <!-- Signup Form -->
                     <form
                         id="signupForm"
-                        action="/signup.php"
+                        action="/signup"
                         method="post"
                         novalidate
                     >
@@ -89,7 +89,8 @@
                                 required
                                 placeholder="Re-enter password"
                             />
-                            <small class="error"></small>
+                            <small class="error" style="color: red;"></small>
+                            <small style="color: red;"><?php if (!empty($errorEmail)) echo $errorEmail; ?></small>
                         </div>
                         <div class="btn">
                             <button type="submit" class="btn">Sign Up</button>
@@ -150,7 +151,7 @@
             });
 
             // Replace with your actual landing page URL
-            const landingPage = "../index.php";
+            const landingPage = "/dashboard";
 
             // Detect back button (popstate event fires when user navigates back/forward)
             window.addEventListener("popstate", function () {

@@ -1,10 +1,11 @@
 <?php
 
-// Connection Variables for mysql connectivity
-$host = "localhost";
-$db = "inventory_db";
-$user = "root";
-$pass = "";
+require_once __DIR__ . '/env.php'; // load .env first
+
+$host = getenv('DBHOST');
+$db   = getenv('DBNAME');
+$user = getenv('DBUSER');
+$pass = getenv('DBPASSWORD');
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass);

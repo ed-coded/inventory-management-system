@@ -104,8 +104,8 @@
 </div>
 
 <script>
-const ctx = document.getElementById('salesReportChart');
-new Chart(ctx, {
+const ctp = document.getElementById('salesReportChart');
+new Chart(ctp, {
     type: 'line',
     data: {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],

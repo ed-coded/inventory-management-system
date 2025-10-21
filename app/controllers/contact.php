@@ -1,4 +1,5 @@
 <?php
+
 require_once dirname(dirname(__DIR__)) . "/config/path.php";
 
 $title = "Contact Us";

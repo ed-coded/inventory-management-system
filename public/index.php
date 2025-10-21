@@ -30,10 +30,12 @@ $routes = [
     '/salesOrder' => dirname(__DIR__) . '/app/controllers/salesOrder.php',
     '/help' => dirname(__DIR__) . '/app/controllers/help.php',
     '/settings' => dirname(__DIR__) . '/app/controllers/settings.php',
+    '/AuthController' => dirname(__DIR__) . '/app/controllers/AuthController.php',
     '/contactUs' => dirname(__DIR__) . '/app/controllers/contact.php',
     '/privacy' => dirname(__DIR__) . '/app/controllers/privacy.php',
-    '/terms' => dirname(__DIR__) . '/app/controllers/terms.php'
-
+    '/terms' => dirname(__DIR__) . '/app/controllers/terms.php',
+    '/logout' => dirname(__DIR__) . '/app/controllers/logout.php',
+    '/404' => dirname(__DIR__) . '/app/views/404.php'
 ];
 
 // ===============================
@@ -43,5 +45,5 @@ if (array_key_exists($url, $routes)) {
     require $routes[$url];
 } else {
     http_response_code(404);
-    require dirname(__DIR__) . '/app/views/404.php';
+    require $routes['/404'];
 }

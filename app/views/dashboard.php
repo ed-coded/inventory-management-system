@@ -116,8 +116,8 @@
 <!-- 📈 Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-  const ctx = document.getElementById('stockChart').getContext('2d');
-  const stockChart = new Chart(ctx, {
+  const ctp = document.getElementById('stockChart').getContext('2d');
+  const stockChart = new Chart(ctp, {
     type: 'bar',
     data: {
       labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],

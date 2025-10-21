@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Password Reset — Inventory Management</title>
+  <?php $title = 'Password Reset — Inventory Management' ?>
+  <?php include __DIR__ . '/partials/tags.php'?>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
@@ -30,7 +31,7 @@
   <main class="bg-white w-full max-w-md rounded-[5px] shadow-md p-6 border border-gray-100">
     <!-- Brand -->
     <div class="flex items-center gap-3 mb-6">
-      <div class="bg-blue-600 text-white font-bold text-lg w-10 h-10 flex items-center justify-center rounded-[5px]">IMS</div>
+      <img src="/asset/img/inventory-logo-5.png" alt="Logo" class="logo w-10 h-15 flex items-center justify-center rounded-[5px]">
       <div>
         <h1 class="text-gray-800 font-semibold text-base">Inventory Management</h1>
         <p class="text-gray-500 text-xs">Reset your password</p>
@@ -46,7 +47,7 @@
     </div>
 
     <!-- Form -->
-    <form id="resetForm" method="POST" action="/app/controllers/AuthController.php" novalidate>
+    <form id="resetForm" method="POST" action="/AuthController" novalidate>
       <div class="relative mb-4">
         <i class="fa fa-envelope absolute left-3 top-3 text-gray-400"></i>
         <input 
@@ -68,7 +69,7 @@
         >
           <span id="btnContent">Send Reset Link</span>
         </button>
-        <a href="./" class="text-blue-600 text-sm hover:underline">Back to login</a>
+        <a href="/login" class="text-blue-600 text-sm hover:underline">Back to login</a>
       </div>
 
       <p id="formMessage" class="text-sm mt-3 text-center"></p>
