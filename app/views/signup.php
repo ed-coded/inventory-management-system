@@ -17,8 +17,8 @@
                     <!-- Google Sign Up -->
                     <div
                         id="g_id_onload"
-                        data-client_id="861961544746-6ltr6ts9mqhj6j2b8q7qabbvkcm7cila.apps.googleusercontent.com"
-                        data-login_uri="https://yourdomain.com/auth/google"
+                        data-client_id=<?= $data_client_id ?>
+                        data-login_uri="http://localhost:9090/signup"
                         data-auto_prompt="false"
                     ></div>
                     <div
@@ -93,7 +93,7 @@
                             <small style="color: red;"><?php if (!empty($errorEmail)) echo $errorEmail; ?></small>
                         </div>
                         <div class="btn">
-                            <button type="submit" class="btn">Sign Up</button>
+                            <button type="submit" class="btn"><i class="fa-solid fa-user-plus"></i>&nbsp;&nbsp;Sign Up</button>
                         </div>
                         <p>
                             Already have an account?

@@ -184,3 +184,7 @@ footer {
     margin: .5rem 0;
     font-weight: 500;
 }
+
+#hero-text {
+    font-size: 2rem !important;
+}

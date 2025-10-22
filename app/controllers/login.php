@@ -1,8 +1,11 @@
 <?php
 session_start();
 require_once dirname(dirname(__DIR__)) . "/config/db.php";
+require_once dirname(dirname(__DIR__)) . "/config/env.php";
 require_once dirname(dirname(__DIR__)) . "/config/path.php";
 require dirname(__DIR__) . "/functions.php";
+
+$data_client_id = getenv('DATA_CLIENT_ID');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = trim($_POST['email']);

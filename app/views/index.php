@@ -28,7 +28,7 @@
                     </svg>
                 </div>
                 <div class="divider bottom">
-                    <h1><span>Inventory, </span>Simplified. <br> Business, <span>Amplified.</span></h1>
+                    <h1 id="hero-text"><span>Inventory, </span>Simplified. <br> Business, <span>Amplified.</span></h1>
                     <p>Stay ahead by turning real-time insights into smarter decisions, while effortless inventory control ensures you never miss a sale or lose track of stock.</p>
                     <div class="btn-container" id="input-btn">
                         <button onclick="showSignUp">GET STARTED</button>
